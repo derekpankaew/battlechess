@@ -65,7 +65,7 @@ def getBestMove(board):
     
     moveList = possibleMoves # Store it for later, to pick the winning move from
     
-    print("Possible Moves:\n%s"%(possibleMoves))
+#    print("Possible Moves:\n%s"%(possibleMoves))
       
     winningChance = []
     
@@ -99,26 +99,26 @@ def getBestMove(board):
         
         if index >= maxMovesToAnalyze:
             
-            print("BREAKING")
+#            print("BREAKING")
             
             break
     
-    print("Moves by win chance:")
+#    print("Moves by win chance:")
     
-    print("winner is:")
+#    print("winner is:")
     
     winner = winningChance.index(max(winningChance))
     
-    print (winner)
+#    print (winner)
     
-    print (winningChance)
-    print (moveList)
+#    print (winningChance)
+#    print (moveList)
     
     winningMove = moveList[winner]
     
-    print("Returning:\n%s" %(winningMove))
+#    print("Returning:\n%s" %(winningMove))
     
     end = time.time()
-    print(end - start)
+#    print(end - start)
     
     return winningMove

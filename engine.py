@@ -4,7 +4,7 @@ import time
 import random
 import chess
 
-from getBestMOve import getBestMOve
+from getBestMove import getBestMove
 
 def get_move(board, limit=None):
   # TODO: Fill this in with an actual chess engine
@@ -12,6 +12,12 @@ def get_move(board, limit=None):
 
   #print("playing", move, file=sys.stderr)
   return bestMove
+
+#board = chess.Board()
+#      
+#result = get_move(board)
+#
+#print(result)
 
 if __name__ == "__main__":
   print("welcome to the greatest chess engine", file=sys.stderr)
@@ -39,4 +45,3 @@ if __name__ == "__main__":
       print("bestmove %s" % move)
     elif cmd[0] == "quit":
       exit(0)
-      

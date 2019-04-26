@@ -10,7 +10,6 @@ import pandas as pd
 from numpy import array
 from numpy import argmax
 from keras.utils import to_categorical
-from joblib import dump, load # For saving OneHotEncoder
 
 # Encode individual pieces into numbers
 # Black is lowercase, white is uppercase

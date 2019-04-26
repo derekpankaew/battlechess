@@ -10,8 +10,6 @@ import pandas as pd
 from numpy import array
 from numpy import argmax
 from keras.utils import to_categorical
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import OneHotEncoder
 from joblib import dump, load # For saving OneHotEncoder
 
 # Encode individual pieces into numbers
@@ -103,14 +101,6 @@ def ExpandIntToZeros(positions):
             result.append(piece) # If it's not an int, just append it
             
     return result
-
-def oneHotEncoded(inputArray):
-
-    arr = array(inputArray)
-    arr_reshaped = arr.reshape(len(arr), 1)
-    onehot_encoded = onehot_encoder.fit_transform(arr_reshaped)
-    
-    return onehot_encoded
 
 def oneHotEncodedHack(input):
     
